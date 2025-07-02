@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0d1a26, #1f3b4d); /* 备用渐变 */
+  font-family: 'Outfit', sans-serif;
+  color: white;
+  min-height: 100vh;
+}
+
+.to-do-list {
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+button {
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    margin-left: 10px;
+}
+
+.add-button {
+    background-color:hsl(120, 68%, 46%);
+}
+
+.add-button:hover {
+    background-color:hsl(120, 68%, 36%);
+}
+
+.delete-button {
+    background-color:hsl(12, 66%, 46%);
+    padding: 8px 12px;
+    font-size:1.4rem;
+    margin-left: 10px;
+}
+
+.delete-button:hover {
+    background-color:hsl(12, 66%, 36%);
+}
+
+input[type="text"] {
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 2px solid hsla(0, 0%, 80%, 0.5);
+    border-radius: 5px;
+    color: hsla(0, 0%, 0%, 0.5);
+
+}
+
+.to-do-list ol {
+    list-style-type: none;
+    padding-left: 0;
+    width: 1000px;
+    margin: auto
+}
+
+.to-do-list li {
+    color:#4e6780;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 12px 16px;
+    background-color: hsl(240, 33%, 99%);
+    margin-bottom: 10px;
+    border: 3px solid hsl(0, 0%, 85%, 0.75);
+    border-radius: 5px;
+    
+}
+
+.to-do-list li:hover {
+    background-color: hsl(240, 33%, 79%);
+}
+
+.to-do-list li span {
+  font-size: 1.5rem;
+  
+}
+ 
+.to-do-list input[type="checkbox"] {
+  width: 35px;
+  height: 35px;
+  border: #1f3b4d;
+  border-width: 3px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.filter-buttons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px; /* 替代 margin-right 更灵活 */
+  justify-content: center;
+}
+
+.filter-buttons button {
+  background-color: hsl(208, 54%, 55%);
+  font-size: 1.2rem;
+  padding: 6px 14px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.filter-buttons button:hover {
+  background-color: hsl(208, 54%, 45%);
+}
+
+.filter-buttons .active {
+  background-color: hsl(208, 54%, 35%);
+  border: 2px solid white;
+}
