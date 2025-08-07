@@ -26,7 +26,7 @@ function ToDoList(){
 
     const currentFilter = useSelector(state => state.todos.filter);
 
-    // 将 Redux 中的 todos 保存到 localStorage
+
     useEffect(() => {
         localStorage.setItem('todos', JSON.stringify(allTodos));
     }, [allTodos]);
@@ -34,7 +34,7 @@ function ToDoList(){
     function handleAdd(event){
         if (newTask.trim() !== "") {
             dispatch(addTodo(newTask));
-            setNewTask(""); // 清空输入框
+            setNewTask(""); 
         }
     }
 
@@ -50,7 +50,7 @@ function ToDoList(){
                 type="text"
                 placeholder='Enter a task...'
                 value={newTask}
-                onChange={(e) => setNewTask(e.target.value)} //实时调用handleInputchange函数
+                onChange={(e) => setNewTask(e.target.value)} 
             />
             <button 
                 className="add-button"
