@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: linear-gradient(135deg, #0d1a26, #1f3b4d); /* 备用渐变 */
+  background: linear-gradient(135deg, #0d1a26, #1f3b4d);
   font-family: 'Outfit', sans-serif;
   color: white;
   min-height: 100vh;
